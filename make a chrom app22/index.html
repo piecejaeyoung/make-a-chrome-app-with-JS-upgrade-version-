@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lets Start</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <h1 class="clock"></h1>
+    <form class="login">
+      <input
+        class="login-input"
+        type="text"
+        placeholder="Please input Your Name"
+        required
+      />
+    </form>
+    <text class="greetings hidden">This must be hidden</text>
+    <form class="todo hidden">
+      <input
+        class="todo-input hidden"
+        type="text"
+        placeholder=" To do list"
+        required
+      />
+    </form>
+    <ul class="todolist hidden"></ul>
+
+    <span class="weather">
+      <id class="fas fa-map-marker-alt weather-icon"></i>
+      <span class="weather-city">busan</span>
+      <span class="weather-info"></span>
+    </span>
+
+    <script src="src/login.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/bgimg.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/todo.js"></script>
+  </body>
+</html>
