@@ -1,0 +1,29 @@
+.login-input {
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+    padding-top: 20px;
+    transition: border-color 0.5s ease-in-out;
+  }
+  .login-input:focus {
+    outline: none;
+    border-color: burlywood;
+  }
+  .login-input:focus::placeholder {
+    opacity: 0;
+  }
+  .login-input::placeholder {
+    font-size: 22px;
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .greetings {
+    font-size: 3em;
+  }
+  
