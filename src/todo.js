@@ -22,8 +22,8 @@ function paintTodo(todoValue, todoId, todoIsChecked) {
   todoListItem.id = todoId;
   todoCheckEmoji.classList.add(EMOJI_KEY);
   todoDeleteEmoji.classList.add(EMOJI_KEY, "emoji__delete", "hidden__opacity");
-  todoCheckEmoji.textContent = "🔥";
-  todoDeleteEmoji.textContent = "❌";
+  todoCheckEmoji.textContent = "👊";
+  todoDeleteEmoji.textContent = "❎";
   todoText.textContent = todoValue;
 
   todoList.appendChild(todoListItem);
@@ -41,10 +41,10 @@ function paintTodo(todoValue, todoId, todoIsChecked) {
 function paintCheck(todoCheckEmoji) {
   const todoText = todoCheckEmoji.nextElementSibling;
   todoText.classList.toggle("checked");
-  if (todoCheckEmoji.textContent === "🔥") {
-    todoCheckEmoji.textContent = "✔️";
+  if (todoCheckEmoji.textContent === "👊") {
+    todoCheckEmoji.textContent = "✅";
   } else {
-    todoCheckEmoji.textContent = "🔥";
+    todoCheckEmoji.textContent = "👊";
   }
 }
 
